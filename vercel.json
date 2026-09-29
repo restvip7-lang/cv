@@ -6,12 +6,12 @@
   "installCommand": "",
   "outputDirectory": ".",
   "redirects": [
-    { "source": "/en", "destination": "/en.html", "permanent": true },
-    { "source": "/en/", "destination": "/en.html", "permanent": true },
-    { "source": "/tr", "destination": "/tr.html", "permanent": true },
-    { "source": "/tr/", "destination": "/tr.html", "permanent": true },
-    { "source": "/en/:path*", "destination": "/en.html", "permanent": true },
-    { "source": "/tr/:path*", "destination": "/tr.html", "permanent": true }
+    { "source": "/en", "destination": "/en.html", "statusCode": 301 },
+    { "source": "/en/", "destination": "/en.html", "statusCode": 301 },
+    { "source": "/tr", "destination": "/tr.html", "statusCode": 301 },
+    { "source": "/tr/", "destination": "/tr.html", "statusCode": 301 },
+    { "source": "/en/:path*", "destination": "/en.html", "statusCode": 301 },
+    { "source": "/tr/:path*", "destination": "/tr.html", "statusCode": 301 }
   ],
   "headers": [
     {
