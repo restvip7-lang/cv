@@ -9,7 +9,9 @@
     { "source": "/en", "destination": "/en.html", "permanent": true },
     { "source": "/en/", "destination": "/en.html", "permanent": true },
     { "source": "/tr", "destination": "/tr.html", "permanent": true },
-    { "source": "/tr/", "destination": "/tr.html", "permanent": true }
+    { "source": "/tr/", "destination": "/tr.html", "permanent": true },
+    { "source": "/en/:path*", "destination": "/en.html", "permanent": true },
+    { "source": "/tr/:path*", "destination": "/tr.html", "permanent": true }
   ],
   "headers": [
     {
