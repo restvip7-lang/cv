@@ -30,13 +30,13 @@
 
 /* Все три карточки сразу, когда экран это позволяет. Пролистывать по одной
    при половине пустого экрана — терять и время читателя, и аргументы. */
-@media(min-width:1100px) and (min-height:720px){
+@media(min-width:1152px) and (min-height:720px){
   .js .detail[hidden]{display:block}
   .detail-stack{
     display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
     gap:0 40px;align-items:start;
   }
-  .detail{padding-top:0}
+  .detail{padding-top:20px}
   .js .pager{display:none}
 }
 
