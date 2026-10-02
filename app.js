@@ -23,5 +23,5 @@
  document.querySelectorAll('[data-dialog]').forEach(link=>link.addEventListener('click',event=>{event.preventDefault();modalTrigger=link;document.getElementById(link.dataset.dialog).showModal();}));
  document.querySelectorAll('dialog').forEach(dialog=>{dialog.querySelector('.close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',event=>{const box=dialog.getBoundingClientRect();if(event.target===dialog&&(event.clientX<box.left||event.clientX>box.right||event.clientY<box.top||event.clientY>box.bottom))dialog.close();});dialog.addEventListener('close',()=>modalTrigger?.focus({preventScroll:true}));});
  document.addEventListener('click',event=>{if(!language.contains(event.target))language.open=false;});document.addEventListener('keydown',event=>{if(event.key==='Escape')language.open=false;});
- window.addEventListener('popstate',render);window.addEventListener('hashchange',render);window.addEventListener('resize',fit);root.classList.add('js');render();
+ window.addEventListener('popstate',render);window.addEventListener('hashchange',render);window.addEventListener('resize',fit);render();
 })();
