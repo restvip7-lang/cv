@@ -10,8 +10,7 @@
     { "source": "/en/", "destination": "/en.html", "statusCode": 301 },
     { "source": "/tr", "destination": "/tr.html", "statusCode": 301 },
     { "source": "/tr/", "destination": "/tr.html", "statusCode": 301 },
-    { "source": "/en/:path*", "destination": "/en.html", "statusCode": 301 },
-    { "source": "/tr/:path*", "destination": "/tr.html", "statusCode": 301 }
+    { "source": "/en/book-online", "destination": "/en.html", "statusCode": 301 }
   ],
   "headers": [
     {
